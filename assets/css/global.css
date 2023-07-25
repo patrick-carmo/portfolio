@@ -9,6 +9,12 @@ h3,
 p {
   margin: 0px;
 }
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
 ul{
   margin: 0px;
   padding: 0px;
@@ -17,6 +23,7 @@ ul{
 
 img{
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
