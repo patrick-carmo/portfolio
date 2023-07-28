@@ -23,11 +23,21 @@
   font-size: 2.25rem;
   line-height: 1.1;
   color: #fff;
-  margin-bottom: 30px;
+  padding: 15px 0px;
+  transition: color 0.5s ease;
 }
 
-.footer-contato li a{
-  color: #fff
+.footer-contato a{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  padding: 15px 0px;
+}
+
+.footer-contato a:hover{
+  text-decoration: none;
+  color: #b6f829;
+  transition: 0.3s;
 }
 
 .footer-copy{
@@ -43,5 +53,8 @@
   }
   .footer-contato li{
     font-size: 1.5rem;
+  }
+  .footer-contato a:hover{
+    color: inherit
   }
 }

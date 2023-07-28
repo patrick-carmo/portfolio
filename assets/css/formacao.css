@@ -85,16 +85,12 @@
   color: #a3a3a3;
 }
 
-.cursos{
-  margin-bottom: 60px;
-}
-
 .formacao-extra h3{
   font-size: 0.875rem;
   line-height: 1.4;
   color: #8f8f8f;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -106,6 +102,10 @@
   position: absolute;
   left: -36px;
   top: -4px;
+}
+
+.cursos{
+  margin-bottom: 60px;
 }
 
 .cursos h3::before{
@@ -123,7 +123,29 @@ background: url("../img/idiomas.svg") no-repeat center center;
   margin-bottom: 20px;
 }
 
+.cursos li{
+  padding: 0px;
+  margin: 0px;
+  transition: color 0.5s ease;
+}
+
+.cursos li:hover{
+  color: #b6f829;
+  transition: color 0.3s ease;
+}
+
+.formacao-extra a{
+  padding: 10px 0px;
+  transition: padding 0.5s;
+}
+
+.formacao-extra a:hover{
+  padding: 10px 10px;
+  transition: 0.3s;
+}
+
 .formacao-extra span{
+  align-self: center;
   color: #8f8f8f;
 }
 
@@ -147,5 +169,15 @@ background: url("../img/idiomas.svg") no-repeat center center;
   .formacao-extra h3::before{
     position: initial;
     margin-bottom: 10px;
+  }
+  .cursos li:hover{
+    transition: none;
+    color: inherit;
+  }
+
+  .formacao-extra a:hover{
+    transition: none;
+    padding: 10px 0px;
+    color: inherit;
   }
 }
