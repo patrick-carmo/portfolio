@@ -7,7 +7,12 @@
   <meta name="description" content="Desenvolvedor Back End">
   <title>Patrick - Desenvolvedor BackEnd</title>
   <link rel="stylesheet" href="./assets/css/style.min.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <link rel="icon" type="image/svg+xml" href="/assets/img/detalhe.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +20,9 @@
     <a href="#"><img src="./assets/img/patrick.svg" alt="Patrick" width="163" height="38"></a>
     <nav>
       <ul class="header-menu">
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li class="box-white"><a href="#projetos" class="nav-a">Projetos</a></li>
+        <li class="box-white"><a href="#formacao" class="nav-a">Formação</a></li>
+        <li class="box-white"><a href="#contato" class="nav-a">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -25,45 +30,52 @@
   <main class="container introducao">
     <img src="./assets/img/foto.png" alt="Foto de perfil" width="1440px" height="2072px">
     <div>
-      <h1>Desenvolvedor<br>Web</h1>
-      <p>Localizado no Rio de Janeiro 🏖</p>
+      <h1>Desenvolvedor<br>Back-end</h1>
+      <p>Localizado no Rio de Janeiro &#128205</p>
     </div>
   </main>
 
   <section class="container projetos" id="projetos" aria-label="Projetos">
     <h2 class="subtitulo">Projetos</h2>
     <div>
-    <p class="projetos-texto">Desenvolvendo pequenos projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.JS</strong>, <strong>Postgrees</strong>.</p>
+      <p class="projetos-texto">Desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.JS</strong> e <strong>PostgreSQL</strong>.</p>
 
-    <div class="programa">
-      <span class="programa-ano">2023</span>
-      <h3 class="programa-titulo"><a href="https://patrick-carmo.github.io/bikcraft/" target="_blank">Bikcraft</a></h3>
-      <span class="programa-titulo">Tecnologias</span>
-      <p>Projeto simples onde eu trabalhei com os conceitos iniciais de grid e flexbox.</p>
-      <ul class="programa-habilidades">
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
+      <div class="programa box-white">
+        <span class="programa-ano">2023</span>
+        <div class="programa-flex">
+          <h3 class="programa-titulo"><a href="https://patrick-carmo.github.io/bikcraft/" target="_blank" class="hover">Bikcraft</a></h3>
+          <h3 class="repositorio"><a href="https://github.com/patrick-carmo/bikcraft" class="repositorio-hover" target="_blank">Repositório</a></h3>
+        </div>
+        <span class="programa-titulo">Tecnologias</span>
+        <p>Projeto simples onde eu trabalhei com os conceitos iniciais de grid e flexbox.</p>
+        <ul class="programa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+
+      <div class="programa box-white">
+        <span class="programa-ano">2022</span>
+        <div class="programa-flex">
+          <h3 class="programa-titulo"><a href="http://patrick-carmo.infinityfreeapp.com/" target="_blank" class="hover" target="_blank">Telecall - PHP</a></h3>
+          <h3 class="repositorio"><a href="https://github.com/patrick-carmo/projeto-php" class="repositorio-hover" target="_blank">Repositório</a></h3>
+        </div>
+        <span class="programa-titulo">Tecnologias</span>
+        <p>Este foi o meu projeto inicial no mundo da programação, onde criei um CRUD utilizando PHP e MySQL, além de implementar a funcionalidade de exportar logs em formato PDF, permitindo a visualização e o download dos mesmos.</p>
+        <ul class="programa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>bootstrap 4</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+
     </div>
-
-    <div class="programa">
-      <span class="programa-ano">2022</span>
-      <h3 class="programa-titulo"><a href="http://patrick-carmo.infinityfreeapp.com/" target="_blank">Projeto PHP - Telecall</a></h3>
-      <span class="programa-titulo">Tecnologias</span>
-      <p>Este foi o primeiro projeto logo após eu ter meu primeiro contato com a programação, foi feito para a avaliação final do primeiro período da faculdade.</p>
-      <ul class="programa-habilidades">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>bootstrap 4</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-      </ul>
-    </div>
-
-  </div>
   </section>
   <section id="formacao" class="formacao" aria-label="Formação">
-    <div class="formacao-container">
+    <div class="container formacao-container">
       <h2 class="subtitulo">Formação</h2>
       <div>
         <p class="formacao-texto">Estou cursando Análise e Desenvolvimento de Sistemas🎓. Além disso, busco conhecimentos através de cursos intensivos e documentações.</p>
@@ -80,10 +92,10 @@
           <div class="cursos">
             <h3>Cursos Intensivos</h3>
             <ul>
-              <li><a href="#formacao">UX Design & UI Design</a><span>17h</span></li>
-              <li><a href="#formacao">Front End para iniciantes</a><span>23h</span></li>
-              <li><a href="https://www.udemy.com/certificate/UC-c00b1b59-55be-4c51-9d96-e6413169982f/" target="_blank">Desenvolvimento Web Completo</a><span>114.5h<span></li>
-              <li><a href="#formacao" id="cubos">Cubos Academy - Intensivo de Back End</a><span>Cursando</span></li>
+              <li class="box"><a href="#formacao" class="hover">UX Design & UI Design</a><span>17h</span></li>
+              <li class="box"><a href="https://www.origamid.com/certificate/1bdb09b8" target="_blank" class="hover">Front End para iniciantes</a><span>46h</span></li>
+              <li class="box"><a href="https://www.udemy.com/certificate/UC-c00b1b59-55be-4c51-9d96-e6413169982f/" target="_blank" class="hover">Desenvolvimento Web Completo</a><span>114.5h<span></li>
+              <li class="box"><a href="https://cubos.academy/lp/1000bolsasifood" id="cubos" target="_blank" class="hover">Cubos Academy - Intensivo de Back End</a><span>Cursando</span></li>
             </ul>
           </div>
           <div class="idiomas">
@@ -98,14 +110,13 @@
   </section>
 
   <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa👋</p>
+    <div class="container footer-container">
+      <p class="footer-texto">Se você deseja discutir oportunidades ou projetos, fique à vontade para entrar em contato via e-mail ou redes sociais.&#9989</p>
       <ul class="footer-contato">
-        <li><a href="mailto:contato@exemplo.com">patrickdocarmo7@gmail.com</a></li>
-        <li><a href="https://api.whatsapp.com/send/?phone=5521999890522&text&type=phone_number&app_absent=0" target="_blank">+55 21 999890522</a></li>
-        <li><a href="https://www.linkedin.com/in/patrick-carmo/" target="_blank">Linkedin</a></li>
+        <li class="box"><a href="mailto:patrickdocarmo7@gmail.com" class="hover">E-mail</a></li>
+        <li class="box"><a href="https://api.whatsapp.com/send/?phone=5521999890522&text&type=phone_number&app_absent=0" target="_blank" class="hover">WhatsApp</a></li>
+        <li class="box"><a href="https://www.linkedin.com/in/patrick-carmo/" target="_blank" class="hover">LinkedIn</a></li>
       </ul>
-      <p class="footer-copy">Patrick. Alguns direitos reservados.</p>
     </div>
   </footer>
 </body>

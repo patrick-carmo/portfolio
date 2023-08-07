@@ -4,12 +4,7 @@
 }
 
 .formacao-container{
-  max-width: 1200px;
   padding: 120px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
   position: relative;
 }
 
@@ -126,22 +121,10 @@ background: url("../img/idiomas.svg") no-repeat center center;
 .cursos li{
   padding: 0px;
   margin: 0px;
-  transition: color 0.5s ease;
-}
-
-.cursos li:hover{
-  color: #b6f829;
-  transition: color 0.3s ease;
 }
 
 .formacao-extra a{
   padding: 10px 0px;
-  transition: padding 0.5s;
-}
-
-.formacao-extra a:hover{
-  padding: 10px 10px;
-  transition: 0.3s;
 }
 
 .formacao-extra span{
@@ -156,9 +139,7 @@ background: url("../img/idiomas.svg") no-repeat center center;
 
 @media(max-width: 800px){
   .formacao-container{
-    grid-template-columns: 1fr;
     padding: 60px 20px;
-    gap: 40px;
   }
   .formacao .subtitulo{
     color: #fff;

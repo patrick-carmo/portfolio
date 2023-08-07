@@ -46,10 +46,44 @@ img {
   text-transform: uppercase;
   max-width: 5ch;
 }
+
+.nav-a:hover{
+  transform: scale(1.1);
+}
+
+.box-white a{
+  transition: 0.3s ease;
+}
+
+.box-white:hover a{
+  color: #4aa103;
+}
+
+.box{
+  transition: 0.3s ease;
+}
+
+.box:hover a{
+  color: #b6f829;
+}
+
+.hover{
+  transition: all 0.3s ease;
+}
+
+.hover:hover{
+  padding-left: 10px;
+}
+
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
+  }
+
+  .container{
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
