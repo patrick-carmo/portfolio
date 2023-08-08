@@ -46,12 +46,6 @@
   font-size: 0.875rem;
 }
 
-.programa-titulo{
-  font-size: 1.125rem;
-  line-height: 1.1;
-  font-weight: bold;
-}
-
 .programa-texto{
   font-size: 0.875rem;
   line-height: 1.4;
@@ -79,9 +73,10 @@
   font-weight: bold;
   margin-right: 20px;
 }
-
-.repositorio-hover:hover{
-  padding-right: 10px;
+.programa-font{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 .programa-flex{
@@ -97,6 +92,7 @@
     font-size: 1.25rem;
   }
   .programa-ano{
+    grid-row: 4;
     position: initial;
     order: 1;
     width: initial;
@@ -107,5 +103,11 @@
 @media(max-width: 400px){
   .programa{
     grid-template-columns: 1fr;
+  }
+  .programa-tecnologias{
+    grid-row: 3;
+  }
+  .programa-ano{
+    grid-row: initial;
   }
 }

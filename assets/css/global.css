@@ -14,6 +14,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 a:visited {
   color: inherit;
@@ -85,5 +86,11 @@ img {
   .container{
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .hover:hover{
+    padding-left: inherit;
+  }
+  .nav-a:hover{
+    transform: initial;
   }
 }

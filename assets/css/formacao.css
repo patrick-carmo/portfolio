@@ -151,14 +151,4 @@ background: url("../img/idiomas.svg") no-repeat center center;
     position: initial;
     margin-bottom: 10px;
   }
-  .cursos li:hover{
-    transition: none;
-    color: inherit;
-  }
-
-  .formacao-extra a:hover{
-    transition: none;
-    padding: 10px 0px;
-    color: inherit;
-  }
 }
