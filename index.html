@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor Back End">
   <title>Patrick - Desenvolvedor BackEnd</title>
-  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" type="image/svg+xml" href="./assets/img/detalhe.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,34 +36,65 @@
   <section class="container projetos" id="projetos" aria-label="Projetos">
     <h2 class="subtitulo">Projetos</h2>
     <div>
-      <p class="projetos-texto">Desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.JS</strong> e <strong>PostgreSQL</strong>.</p>
+      <p class="projetos-texto">Desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong> e <strong>PostgreSQL</strong>.</p>
 
       <div class="programa box-white">
         <span class="programa-ano">2023</span>
-        <h3 class="programa-font"><a href="https://patrick-carmo.github.io/bikcraft/" target="_blank" class="hover">Bikcraft</a></h3>
+        <h3 class="programa-font"><a href="https://telecall.vercel.app/" target="_blank" class="hover">Telecall</a></h3>
         <span class="programa-tecnologias programa-font">Tecnologias</span>
-        <p>Projeto onde eu coloco com os conceitos aprendidos sobre grid e flexbox.</p>
+        <p>Projeto Full Stack com sistema de cadastro e controle de acesso.<br><br>
+          Front-End responsivo com modo noturno. Back-End com autenticação de usuário e criptografia de senha, além da utilização do JWT como middleware como controle de acesso.</p>
         <ul class="programa-habilidades">
-          <li>HTML</li>
+          <li>EJS</li>
           <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>express</li>
+          <li>JWT</li>
+          <li>bcrypt</li>
+          <li>cookie-parser</li>
+          <li>PostgreSQL</li>
         </ul>
-        <h3 class="repositorio"><a href="https://github.com/patrick-carmo/bikcraft" class="hover" target="_blank">Repositório</a></h3>
+        <h4 class="repositorio"><a href="https://github.com/patrick-carmo/telecall" class="hover" target="_blank">Repositório</a></h4>
       </div>
 
       <div class="programa box-white">
-        <span class="programa-ano">2022</span>
-        <h3 class="programa-font"><a href="http://patrick-carmo.infinityfreeapp.com/" target="_blank" class="hover" target="_blank">Telecall - PHP</a></h3>
+        <span class="programa-ano">2023</span>
+        <h3 class="programa-font"><a href="javascript:void(0)" class="hover">RESTful API - Sistema Dindin</a></h3>
         <span class="programa-tecnologias programa-font">Tecnologias</span>
-        <p>Este foi o meu projeto inicial no mundo da programação, onde criei um CRUD utilizando PHP e MySQL, além de implementar a funcionalidade de exportar logs em formato PDF, permitindo a visualização e o download dos mesmos.</p>
+        <p>
+          API de um sistema de gerenciamento monetário com detalhes sobre gastos.
+          <br><br>
+          Projeto realizado em dupla (pair programming), onde o objetivo foi a construção de uma API
+RESTful com diversos endpoints que realizam anotações de transações e os detalhes do mesmo.<br><br>
+          As principais atividades foram a criação de rotas, validação de dados, criação de middlewares e conexão com banco de dados.
+</p>
         <ul class="programa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>bootstrap 4</li>
           <li>JavaScript</li>
-          <li>PHP</li>
-          <li>MySQL</li>
+          <li>Node.js</li>
+          <li>express</li>
+          <li>JWT</li>
+          <li>Bcrypt</li>
+          <li>PostgreSQL</li>
         </ul>
-        <h3 class="repositorio"><a href="https://github.com/patrick-carmo/projeto-php" class="hover" target="_blank">Repositório</a></h3>
+        <h4 class="repositorio"><a href="https://github.com/patrick-carmo/restful-api-sistema-dindin" class="hover" target="_blank">Repositório</a></h4>
+      </div>
+
+        <div class="programa box-white">
+        <span class="programa-ano">2023</span>
+        <h3 class="programa-font"><a href="javascript:void(0)" class="hover">RESTful API - Banco Digital</a></h3>
+        <span class="programa-tecnologias programa-font">Tecnologias</span>
+        <p>
+          API de um sistema bancário com endpoints para criação, leitura, atualização e exclusão de contas, além de transferência de valores entre as mesmas. Também conta com endpoints para visualização de dados das transferências e visualização do extrato bancário do usuário.<br><br>A API conta persistência de dados com escrita e leitura através do módulo nativo fs.
+        </p>
+        <ul class="programa-habilidades">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>express</li>
+          <li>date-fns</li>
+        </ul>
+        <h4 class="repositorio"><a href="https://github.com/patrick-carmo/restful-api-banco-digital" class="hover" target="_blank">Repositório</a></h4>
       </div>
 
     </div>
@@ -86,16 +117,16 @@
           <div class="cursos">
             <h3>Cursos Intensivos</h3>
             <ul>
-              <li class="box"><a href="#formacao" class="hover">UX Design & UI Design</a><span>17h</span></li>
+              <li class="box"><a href="https://cubos.academy/lp/1000bolsasifood" id="cubos" target="_blank" class="hover">Cubos Academy - Intensivo de Back End</a><span>Cursando</span></li>
+              <li class="box"><a href="https://www.origamid.com/certificate/1bdb09b8" target="_blank" class="hover">JavaScript Completo ES6</a><span>74h</span></li>
               <li class="box"><a href="https://www.origamid.com/certificate/1bdb09b8" target="_blank" class="hover">Front End para iniciantes</a><span>46h</span></li>
               <li class="box"><a href="https://www.udemy.com/certificate/UC-c00b1b59-55be-4c51-9d96-e6413169982f/" target="_blank" class="hover">Desenvolvimento Web Completo</a><span>114.5h<span></li>
-              <li class="box"><a href="https://cubos.academy/lp/1000bolsasifood" id="cubos" target="_blank" class="hover">Cubos Academy - Intensivo de Back End</a><span>Cursando</span></li>
             </ul>
           </div>
           <div class="idiomas">
             <h3>Idiomas</h3>
             <ul>
-              <li>Inglês<span>/ Intermediário</span></li>
+              <li>Inglês<span>/ Intermediário B1</span></li>
             </ul>
           </div>
         </div>
