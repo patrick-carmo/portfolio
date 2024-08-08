@@ -36,26 +36,160 @@
   <section class="container projetos" id="projetos" aria-label="Projetos">
     <h2 class="subtitulo">Projetos</h2>
     <div>
-      <p class="projetos-texto">Desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong> e <strong>PostgreSQL</strong>.</p>
+      <p class="projetos-texto">Desenvolvendo projetos utilizando <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>Nest.js</strong> e <strong>PostgreSQL</strong>.</p>
 
       <div class="programa box-white">
-        <h3 class="programa-font"><a href="https://telecall.vercel.app/" target="_blank" class="hover">Telecall</a></h3>
-        <span class="programa-tecnologias programa-font">Tecnologias</span>
-        <p>Projeto Full Stack com sistema de cadastro e controle de acesso.<br><br>
-          Front-End responsivo com modo noturno. Back-End com autenticação de usuário e criptografia de senha, além da utilização do JWT como middleware para o controle de acesso.</p>
-        <ul class="programa-habilidades">
-          <li>EJS</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>JWT</li>
-          <li>bcrypt</li>
-          <li>cookie-parser</li>
-          <li>PostgreSQL</li>
-        </ul>
-        <h4 class="repositorio"><a href="https://github.com/patrick-carmo/telecall" class="hover" target="_blank">Repositório</a></h4>
+        <div class="programa-descricao">
+          <h3 class="programa-font">
+            <a href="https://marriage-client-deploy.vercel.app/" target="_blank" class="hover">Marriage</a>
+          </h3>
+          <p>
+            Um PWA que permitiu aos convidados de um casamento gravar mensagens em vídeo, fotos ou textos, para que o casal pudesse visualizá-las após a cerimônia.
+          </p>
+          <p>
+            O objetivo do projeto foi dar a possibilidade dos convidados poderem gravar vídeos, fotos ou enviar mensagens aos noivos.
+          </p>
+          <p>
+            <strong>Principais funcionalidades:</strong>
+          </p>
+          <ul class="programa-list">
+            <li>Autenticação com Google E JWT.</li>
+            <li>Persistência de daods com PostgreSQL.</li>
+            <li>Upload de arquivos com multer e Google Drive API.</li>
+            <li>
+              Painel administrativo para controle total sobre mensagens, fotos e vídeos recebidos.
+            </li>
+            <li>WebScoket para atualização em tempo real da barra de progresso.</li>
+            <li>
+              Scroll infinito e Refresh para uma visualização mais fluida das mensagens.
+            </li>
+            <li>
+              Progressive Web App - Funciona tanto na web quanto no aplicativo mobile, consultando a mesma API.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="programa-font tecnologias">Principais Tecnologias</p>
+          <ul class="programa-habilidades">
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Nest.js</li>
+            <li>PostgreSQL</li>
+            <li>TypeORM</li>
+            <li>JWT</li>
+            <li>WebSocket</li>
+            <li>Ionic</li>
+            <li>Angular</li>
+            <li>Google Drive API</li>
+          </ul>
+        </div>
+
+        <div class="programa-links">
+          <p class="programa-bold">
+            <a href="https://marriage-client-deploy.vercel.app/" class="hover" target="_blank">Site</a>
+          </p>
+          <p class="programa-bold">
+            <a href="https://github.com/patrick-carmo/marriage" class="hover" target="_blank">Repositório - Documentação</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="programa box-white">
+        <div class="programa-descricao">
+          <h3 class="programa-font">
+            <a href="https://github.com/patrick-carmo/sistema-pdv" target="_blank" class="hover">Sistema PDV</a>
+          </h3>
+          <p>
+            API Rest para um sistema de ponto de vendas.
+          </p>
+          <p>
+            O objetivo do projeto foi desenvolver uma API Rest para um sistema de ponto de vendas, fornecendo recursos essenciais para operação de vendas e gerenciamento de clientes, produtos e pedidos.
+          </p>
+          <p>
+            O desafio principal foi a organização do projeto, já que foi desenvolvido por mim e mais outros 3 desenvolvedores. O projeto foi entregue seguindo a metodologia ágil Scrum, com sprints de 3 semanas.
+          </p>
+          <p>
+            <strong>Principais funcionalidades:</strong>
+          </p>
+          <ul class="programa-list">
+            <li>Autenticação por JWT.</li>
+            <li>Senhas criptografadas com bcrypt.</li>
+            <li>Uso do Joi para valização dos dados de entrada.</li>
+            <li>Endpoints para CRUD relacionados a usuários, clientes, produtos e pedidos.</li>
+            <li>Upload das fotos dos produtos na núvem utilizando multer.</li>
+            <li>Utilização do nodemailer para enviar e-mails de confirmação para os clientes após a conclusão do pedido.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="programa-font tecnologias">Principais Tecnologias</p>
+          <ul class="programa-habilidades">
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>Knex</li>
+            <li>JWT</li>
+            <li>S3 AWS</li>
+          </ul>
+        </div>
+
+        <div class="programa-links">
+          <p class="programa-bold">
+            <a href="https://github.com/patrick-carmo/sistema-pdv" class="hover" target="_blank">Repositório</a>
+          </p>
+          <p class="programa-bold">
+            <a href="https://patrick-sistema-pdv.vercel.app/api-doc/" class="hover" target="_blank">Documentação</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="programa box-white">
+        <div class="programa-descricao">
+          <h3 class="programa-font">
+            <a href="https://news-team-5.vercel.app/" target="_blank" class="hover">IBGE News</a>
+          </h3>
+          <p>
+            PWA para visualização de notícias do IBGE.
+          </p>
+          <p>
+            O projeto foi realizado com outros 4 desenvolvedores. O objetivo do projeto foi criar uma aplicação com funcionalidades como autenticação via Firebase, consumo de uma API e exibição paginada dos dados obtidos, além da criação de apk funcional para android. Optamos por utilizar a API do IBGE Notícias.
+          </p>
+          <p>
+            <strong>Principais funcionalidades:</strong>
+          </p>
+          <ul class="programa-list">
+            <li>Autenticação com Google ou e-mail e senha.</li>
+            <li>Autenticação biométrica no app mobile.</li>
+            <li>Feed com as notícias apresentadas em cards, além de um scroll infinito e refresh.</li>
+            <li>Persistência de dados no banco de dados NoSQL Firestore.</li>
+            <li>Bookmarks, possibilitando o usuário salvar as notícias favoritas.</li>
+            <li>Sistema comentários com atualização em tempo real.</li>
+            <li>Sistema de likes.</li>
+            <li>Sistema de buscas.</li>
+            <li>
+              Progressive Web App - Funciona tanto na web quanto no aplicativo mobile, consultando a mesma API.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="programa-font tecnologias">Principais Tecnologias</p>
+          <ul class="programa-habilidades">
+            <li>TypeScript</li>
+            <li>Ionic</li>
+            <li>Angular</li>
+            <li>Firebase</li>
+            <li>Firestore</li>
+          </ul>
+        </div>
+
+        <div class="programa-links">
+          <p class="programa-bold">
+            <a href="https://news-team-5.vercel.app/" class="hover" target="_blank">Site</a>
+          </p>
+          <p class="programa-bold">
+            <a href="https://github.com/patrick-carmo/news" class="hover" target="_blank">Repositório</a>
+          </p>
+        </div>
       </div>
 
       <div class="programa box-white">
@@ -65,9 +199,9 @@
           API de um sistema de gerenciamento monetário com detalhes sobre gastos.
           <br><br>
           Projeto realizado em dupla (pair programming), onde o objetivo foi a construção de uma API
-RESTful com diversos endpoints que realizam anotações de transações e os detalhes do mesmo.<br><br>
+          RESTful com diversos endpoints que realizam anotações de transações e os detalhes do mesmo.<br><br>
           As principais atividades foram a criação de rotas, validação de dados, criação de middlewares e conexão com banco de dados.
-</p>
+        </p>
         <ul class="programa-habilidades">
           <li>JavaScript</li>
           <li>Node.js</li>
@@ -79,8 +213,50 @@ RESTful com diversos endpoints que realizam anotações de transações e os det
         <h4 class="repositorio"><a href="https://github.com/patrick-carmo/restful-api-sistema-dindin" class="hover" target="_blank">Repositório</a></h4>
       </div>
 
-        <div class="programa box-white">
-        <h3 class="programa-font"><a href="javascript:void(0)" class="hover">RESTful API - Banco Digital</a></h3>
+      <div class="programa box-white">
+        <div class="programa-descricao">
+          <h3 class="programa-font">
+            <a href="https://telecall.vercel.app/" target="_blank" class="hover">Telecall</a>
+          </h3>
+          <p>
+            Projeto full stack com sistema de cadastro e controle de acesso.
+          </p>
+          <p>
+            <strong>Principais funcionalidades:</strong>
+          </p>
+          <ul class="programa-list">
+            <li>Autenticação por e-mail e senha utilizando JWT.</li>
+            <li>Criptografia de senha.</li>
+            <li>Persistência de dados com PostgreSQL.</li>
+            <li>Validação dos dados utilizando a biblioteca Joi.</li>
+            <li>Autenticação biométrica no app mobile.</li>
+            <li>Modo noturno e telas responsivas.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="programa-font tecnologias">Principais Tecnologias</p>
+          <ul class="programa-habilidades">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>JWT</li>
+            <li>EJS</li>
+          </ul>
+        </div>
+
+        <div class="programa-links">
+          <p class="programa-bold">
+            <a href="https://project-patrick.vercel.app/login" class="hover" target="_blank">Site</a>
+          </p>
+          <p class="programa-bold">
+            <a href="https://github.com/patrick-carmo/telecall" class="hover" target="_blank">Repositório</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="programa box-white">
+        <h3 class="programa-font"><a href="https://github.com/patrick-carmo/restful-api-sistema-dindin" class="hover">RESTful API - Banco Digital</a></h3>
         <span class="programa-tecnologias programa-font">Tecnologias</span>
         <p>
           API de um sistema bancário com endpoints para criação, leitura, atualização e exclusão de contas, além de transferência de valores entre as mesmas. Também conta com endpoints para visualização de dados das transferências e visualização do extrato bancário do usuário.<br><br>A API conta persistência de dados com escrita e leitura através do módulo nativo fs.
@@ -100,11 +276,11 @@ RESTful com diversos endpoints que realizam anotações de transações e os det
     <div class="container formacao-container">
       <h2 class="subtitulo">Formação</h2>
       <div>
-        <p class="formacao-texto">Estou cursando Análise e Desenvolvimento de Sistemas🎓. Além disso, busco conhecimentos através de cursos intensivos e documentações.</p>
+        <p class="formacao-texto">Sou formado em Análise e Desenvolvimento de Sistemas🎓. Além disso, busco conhecimentos através de cursos intensivos e documentações.</p>
 
         <ul class="faculdade-lista">
           <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel</span>
+            <span class="faculdade-tipo">Superior em</span>
             <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
             <span class="faculdade-instituicao">UNISUAM</span>
           </li>
@@ -115,6 +291,7 @@ RESTful com diversos endpoints que realizam anotações de transações e os det
             <h3>Cursos Intensivos</h3>
             <ul>
               <li class="box"><a href="https://aulas.cubos.academy/certificado/cac03246-5a77-492f-b46a-eb3188050b66?utm_medium=email&_hsmi=211419814&_hsenc=p2ANqtz-_stR_X1Y65qpTsN1O40WkLrBzMXt_FA2DaBL2wseUpai_29rv-yZ4WBR0il_Da0NGO4oWF5t9jPOLHr2zUVlzIgAeNOA&utm_content=211419814&utm_source=hs_email" id="cubos" target="_blank" class="hover">Cubos Academy - Intensivo de Back End</a><span>500h</span></li>
+              <li class="box"><a href="https://www.udemy.com/certificate/UC-b4bcca18-cdd2-425b-a197-1b12dc399774/" target="_blank" class="hover">NestJS Fundamentos</a><span>15h</span></li>
               <li class="box"><a href="https://www.origamid.com/certificate/1bdb09b8" target="_blank" class="hover">JavaScript Completo ES6</a><span>74h</span></li>
               <li class="box"><a href="https://aulas.cubos.academy/certificado/bf3a557d-2abd-4476-8df6-a6db2fd5b513/cursos/9f2c19ab-214a-443d-8b3a-78d8d2ca2b35" class="hover" target="_blank">Do JavaScript ao TypeScript</a><span>22h</span></li>
               <li class="box"><a href="https://www.origamid.com/certificate/1bdb09b8" target="_blank" class="hover">Front End para iniciantes</a><span>46h</span></li>

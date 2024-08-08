@@ -1,8 +1,8 @@
-.projetos .subtitulo{
-  color: #e0e0e0
+.projetos .subtitulo {
+  color: #e0e0e0;
 }
 
-.projetos-texto{
+.projetos-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
@@ -10,13 +10,13 @@
   color: #525252;
 }
 
-.projetos-texto strong{
+.projetos-texto strong {
   color: #141414;
 }
 
-.programa{
+.programa {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1.4fr;
   gap: 10px 20px;
   padding: 20px;
   background: #f5f5f5;
@@ -25,7 +25,15 @@
   position: relative;
 }
 
-.programa::before{
+.programa-descricao p {
+  padding: 0.4rem 0;
+}
+
+.tecnologias {
+  margin-bottom: 10px;
+}
+
+.programa::before {
   content: '';
   display: block;
   width: 4px;
@@ -36,7 +44,7 @@
   left: -4px;
 }
 
-.programa-ano{
+.programa-ano {
   position: absolute;
   top: 22px;
   left: -100px;
@@ -46,20 +54,20 @@
   font-size: 0.875rem;
 }
 
-.programa-texto{
+.programa-texto {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #525252;
 }
 
-.programa-habilidades{
+.programa-habilidades {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
 }
 
-.programa-habilidades li{
+.programa-habilidades li {
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
@@ -67,31 +75,42 @@
   padding: 5px 10px;
 }
 
-.repositorio{
+.programa-bold {
   font-size: 1rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-right: 20px;
 }
-.programa-font{
+
+.programa-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.programa-font {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
 }
 
-.programa-flex{
+.programa-flex {
   display: flex;
   justify-content: space-between;
 }
 
-@media (max-width: 800px){
-  .projetos .subtitulo{
+.programa-list {
+  padding-left: 20px;
+  list-style: initial;
+}
+
+@media (max-width: 800px) {
+  .projetos .subtitulo {
     color: #141414;
   }
-  .projetos-texto{
+  .projetos-texto {
     font-size: 1.25rem;
   }
-  .programa-ano{
+  .programa-ano {
     grid-row: 4;
     position: initial;
     order: 1;
@@ -100,14 +119,14 @@
   }
 }
 
-@media(max-width: 400px){
-  .programa{
+@media (max-width: 400px) {
+  .programa {
     grid-template-columns: 1fr;
   }
-  .programa-tecnologias{
+  .programa-tecnologias {
     grid-row: 3;
   }
-  .programa-ano{
+  .programa-ano {
     grid-row: initial;
   }
 }
